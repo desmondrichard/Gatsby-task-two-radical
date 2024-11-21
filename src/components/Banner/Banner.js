@@ -13,9 +13,9 @@ function Banner() {
     "Continued tech support after the launch",
   ];
   return (
-    <section className="bannerContainer">
-      <div className="bannerWrapper container">
-        <div className="bannerContentLeft pt-5">
+    <section className="bannerContainer pb-5">
+      <div className="bannerWrapper container customBannerContainer">
+        <div className="bannerContentLeft">
           <h1>
             <span>Flutter</span> Mobile App Development Company
           </h1>
@@ -37,7 +37,7 @@ function Banner() {
             Book a free consultation
           </Button>
         </div>
-        <div className="bannerContentRight pt-5 px-1 pb-1">
+        <div className="bannerContentRight px-1">
           <Image
             src={bannerImage}
             alt="banner_image"

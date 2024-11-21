@@ -1,5 +1,5 @@
 .bannerContainer {
-  background-image: url("../../assets/images/bannerBackground.png");
+  background-image: url("../../assets/images/BackgroundBanner.png");
   background-size: cover;
   background-position: center;
 }
@@ -26,7 +26,7 @@
   background: linear-gradient(92.56deg, #3b66ff 0.29%, #3affe7 33.8%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent; /* This makes the text transparent */
+  -webkit-text-fill-color: transparent; /* To make text transparent */
 }
 
 .bannerContentLeft > p {
@@ -69,14 +69,20 @@
   background-color: #0d6efd !important;
 }
 
-li {
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .bannerImage {
-    width: 585.38px;
+    max-width: 585.38px;
     min-height: 513px;
     height: 100%;
+    filter: drop-shadow(-10px 10px 90px #ba2c7f);
+  }
+  .bannerContentLeft {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+  .bannerContentRight {
+    padding-top: 91px;
+    padding-bottom: 91px;
   }
 }
 
@@ -94,6 +100,31 @@ li {
     width: 450px;
     min-height: 360px;
     height: 100%;
+    filter: drop-shadow(-10px 10px 90px #ba2c7f);
+  }
+  .bannerContentLeft {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .bannerContentRight {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .bannerImage {
+    min-height: 513px;
+    height: 100%;
+    filter: drop-shadow(-10px 10px 90px #ba2c7f);
+  }
+  .bannerContentLeft {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .bannerContentRight {
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 }
 
@@ -113,8 +144,11 @@ li {
   }
   .bannerContentLeft {
     width: 100%;
-    padding-top: 5px !important;
   }
+  .customBannerContainer {
+    padding: 0px 24px;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
@@ -122,9 +156,18 @@ li {
     width: 100%;
     min-height: 300px;
     height: 100%;
+    filter: drop-shadow(-10px 10px 90px #ba2c7f);
   }
   .listItem {
     background-size: 25px;
+  }
+  .bannerContentLeft {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .bannerContentRight {
+    padding-top: 61px;
+    padding-bottom: 61px;
   }
 }
 
@@ -133,6 +176,7 @@ li {
     min-width: 272px;
     width: 100%;
     max-height: 237.53px;
+    filter: drop-shadow(3px 14px 26px #ba2c7f);
   }
   .bannerContentLeft > h1 {
     font-size: 24px;
@@ -143,5 +187,10 @@ li {
   .listItem {
     font-size: 12px;
     background-size: 16px;
+  }
+  
+  .bannerContentRight {
+    padding-top: 40px;
+    padding-bottom: 42px;
   }
 }

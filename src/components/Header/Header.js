@@ -18,7 +18,7 @@ function Header() {
   return (
     <>
       <header className="headerContainer">
-        <div className="container customContainer">
+        <div className="container customHeaderContainer">
           <Navbar className="headerWrapper">
             <Navbar.Brand className="headerContentLeft">
               <Image src={headerLogo} alt="Logo" className="headerLogo" />
@@ -26,10 +26,10 @@ function Header() {
 
             <Nav className="ms-auto headerContentRight">
               <Nav.Link href="#solutions" className="headerLink">
-                Solutions
+                <span style={{ color: "white" }}>Solutions</span>
               </Nav.Link>
               <Nav.Link href="#blog" className="headerLink">
-                Blog
+                <span style={{ color: "white" }}>Blog</span>
               </Nav.Link>
               <div className="buttonGroup">
                 <Button variant="outline-primary" className="bookCallButton">
