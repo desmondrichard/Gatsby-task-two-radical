@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap");
+
+.headerContainer {
+  background-color: #18171fe5;
+  padding: 18px 0px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+}
+
+.headerWrapper {
+  display: flex;
+  position: relative;
+}
+
+.headerLogo,
+.offcanvasLogo {
+  width: 165px;
+  height: 26px;
+}
+
+.bookCallButton {
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.bookCallButton:hover,
+.bookCallButton:active,
+.bookCallButton:focus-visible {
+  background-color: transparent !important;
+}
+
+.contactUsButton {
+  border: none;
+  color: white !important;
+}
+
+.contactUsButton:hover {
+  background-color: #0d6efd !important;
+}
+
+.headerLink {
+  color: white !important;
+}
+
+/* .headerLink:focus,
+.headerLink:hover,
+.headerLink:active {
+  color: white !important;
+} */
+
+.headerContentRight {
+  column-gap: 60px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.toggleButton {
+  padding: 0px;
+  cursor: pointer;
+}
+
+.toggleIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.iconContainer {
+  position: absolute;
+  right: 0px;
+}
+
+/* Style for Offcanvas background */
+.offcanvas {
+  background-color: #343a40;
+  font-family: "Urbanist", sans-serif;
+}
+
+/* Style for Nav links in Offcanvas */
+.offcanvas .nav-link {
+  color: #ffffff;
+}
+
+/* Style for Nav links on hover */
+.offcanvas .nav-link:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Border-Bottom on Links: */
+.headerLink {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.headerLink.active {
+  border-bottom: 2px solid blue;
+}
+
+@media only screen and (max-width: 991px) {
+  .headerContentRight {
+    display: none;
+  }
+  .iconContainer {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .iconContainer {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .headerContainer {
+    padding: 5px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .headerContainer {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 565px) {
+  .custom-offcanvas {
+    width: 70% !important;
+  }
+  .offcanvasLogo {
+    max-width: 120px;
+    max-height: 100px;
+  }
+  .customContainer {
+    padding: 0px 24px;
+  }
+}

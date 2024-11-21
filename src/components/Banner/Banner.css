@@ -1,0 +1,147 @@
+.bannerContainer {
+  background-image: url("../../assets/images/bannerBackground.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bannerWrapper {
+  display: flex;
+}
+
+.bannerContentLeft {
+  width: 55%;
+}
+
+.bannerContentRight {
+  width: 45%;
+}
+
+.bannerContentLeft > h1 {
+  color: white;
+  font-size: 62px;
+  font-weight: 700;
+}
+
+.bannerContentLeft h1 span {
+  background: linear-gradient(92.56deg, #3b66ff 0.29%, #3affe7 33.8%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* This makes the text transparent */
+}
+
+.bannerContentLeft > p {
+  color: white;
+  font-size: 18px;
+}
+
+.listItem {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  list-style: none;
+  background-image: url("../../assets/images/listStyleType.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  /* font-family: "Urbanist", sans-serif; */
+  /* font-weight: 400 !important; */
+}
+
+.bannerContainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listImageIcon {
+  width: 22px;
+  height: 22px;
+}
+
+/* .bannerParagraph {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+} */
+
+.consultationButton:active,
+.consultationButton:hover {
+  background-color: #0d6efd !important;
+}
+
+li {
+}
+
+@media (min-width: 1200px) {
+  .bannerImage {
+    width: 585.38px;
+    min-height: 513px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bannerContentLeft > h1 {
+    font-size: 45px;
+  }
+  .bannerContentLeft > p {
+    font-size: 15px;
+  }
+  .listItem {
+    font-size: 15px;
+  }
+  .bannerImage {
+    width: 450px;
+    min-height: 360px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .bannerContentLeft > h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .bannerWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .bannerContentRight {
+    width: 100%;
+  }
+  .bannerContentLeft {
+    width: 100%;
+    padding-top: 5px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .bannerImage {
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+  }
+  .listItem {
+    background-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .bannerImage {
+    min-width: 272px;
+    width: 100%;
+    max-height: 237.53px;
+  }
+  .bannerContentLeft > h1 {
+    font-size: 24px;
+  }
+  .bannerContentLeft > p {
+    font-size: 12px;
+  }
+  .listItem {
+    font-size: 12px;
+    background-size: 16px;
+  }
+}
