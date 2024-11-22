@@ -3,7 +3,6 @@ import "./Banner.css";
 import Image from "react-bootstrap/Image";
 import bannerImage from "../../assets/images/BannerImage.png";
 import Button from "react-bootstrap/Button";
-// import listImage from "../../assets/images/listStyleType.png";
 
 function Banner() {
   const items = [
@@ -13,7 +12,7 @@ function Banner() {
     "Continued tech support after the launch",
   ];
   return (
-    <section className="bannerContainer pb-5">
+    <section className="bannerContainer">
       <div className="bannerWrapper container customBannerContainer">
         <div className="bannerContentLeft">
           <h1>
@@ -27,7 +26,7 @@ function Banner() {
 
           <ul>
             {items.map((item, index) => (
-              <li key={index} className="listItem">
+              <li key={index} className="listItem my-2">
                 {item}
               </li>
             ))}
@@ -49,5 +48,4 @@ function Banner() {
     </section>
   );
 }
-
 export default Banner;

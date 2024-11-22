@@ -2,10 +2,9 @@
 
 .headerContainer {
   background-color: #18171fe5;
-  padding: 18px 0px;
+  padding: 22px 0px;
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
-  border-bottom: 1px solid rgb(41, 40, 40);
   /*  */
   position: fixed;
   width: 100%;
@@ -20,8 +19,10 @@
 }
 
 .headerWrapper {
+  /* border:1px solid red; */
   display: flex;
   position: relative;
+  padding: 0px;
 }
 
 .headerLogo,
@@ -33,6 +34,10 @@
 .bookCallButton {
   border: 1px solid white !important;
   color: white !important;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Urbanist", serif;
 }
 
 .bookCallButton:hover,
@@ -44,6 +49,10 @@
 .contactUsButton {
   border: none;
   color: white !important;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Urbanist", serif;
 }
 
 .contactUsButton:hover {
@@ -66,6 +75,7 @@
 .toggleButton {
   padding: 0px;
   cursor: pointer;
+  border: none !important;
 }
 
 .toggleIcon {
@@ -105,6 +115,10 @@
   border-bottom: 2px solid blue;
 }
 
+.customHeaderContainer {
+  padding: 0px 24px;
+}
+
 @media only screen and (max-width: 991px) {
   .headerContentRight {
     display: none;
@@ -132,7 +146,7 @@
   }
 }
 
-@media (max-width: 565px) {
+@media (max-width: 575px) {
   .custom-offcanvas {
     width: 70% !important;
   }
@@ -140,7 +154,9 @@
     max-width: 120px;
     max-height: 100px;
   }
-  .customHeaderContainer {
-    padding: 0px 24px;
+
+  .headerLogo {
+    width: 96.76px;
+    height: 15.41px;
   }
 }
