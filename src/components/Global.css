@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap");
+
 .container {
   max-width: 1280px;
 }
@@ -5,4 +7,5 @@
 html,
 body {
   background-color: #18171f;
+  font-family: "Urbanist", serif;
 }

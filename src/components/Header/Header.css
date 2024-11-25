@@ -2,10 +2,8 @@
 
 .headerContainer {
   background-color: #18171fe5;
-  padding: 23px 0px;
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
-  /*  */
   position: fixed;
   width: 100%;
   top: 0;
@@ -128,6 +126,9 @@
   .contactUsButton {
     padding: 9px 26.5px;
   }
+  .headerContainer {
+    padding: 23px 0px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -169,5 +170,11 @@
   .headerLogo {
     width: 96.76px;
     height: 15.41px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .headerContainer {
+    padding: 22px 0px;
   }
 }
