@@ -1,0 +1,151 @@
+.imageListContainer {
+  border: 1px solid yellow;
+}
+
+.imageListText {
+  color: #969696;
+}
+
+.imageListParentWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.imageListWrapper > p {
+  margin: 0px;
+}
+
+.imageListCard {
+  background-color: transparent;
+  width: 203px;
+  height: 77.96px;
+  /* border: 1px solid red; */
+}
+
+.imageListCardsWrapper {
+  margin-top: 36px;
+  /* border: 1px solid white; */
+}
+
+.imageListCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*seperating classes:*/
+.imageListCard:nth-child(odd) {
+  border: 1px solid red;
+}
+
+.imageListCard:nth-child(even) {
+  border: 1px solid pink;
+}
+
+@media (min-width: 1400px) {
+  .imageListContainer {
+    margin-top: 78px;
+  }
+  .imageListText {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .imageListWrapper {
+    max-width: 361px;
+  }
+  .imageListCardsStyling1 {
+    width: 126px;
+    height: 25.99px;
+  }
+  .imageListCardsStyling2 {
+    width: 156px;
+    height: 37.98px;
+  }
+  .imageListCardsStyling3 {
+    width: 105px;
+    height: 41.98px;
+  }
+  .imageListCardsStyling4 {
+    width: 144px;
+    height: 39.98px;
+  }
+  .imageListCardsStyling5 {
+    width: 106px;
+    height: 39.98px;
+  }
+  .imageListCardsStyling6 {
+    width: 152px;
+    height: 32.81px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .imageListContainer {
+    margin-top: 50px;
+  }
+  .imageListText {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .imageListWrapper {
+    max-width: 361px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .imageListContainer {
+    margin-top: 50px;
+  }
+  .imageListText {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .imageListWrapper {
+    max-width: 361px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .imageListContainer {
+    margin-top: 50px;
+  }
+  .imageListText {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .imageListWrapper {
+    max-width: 361px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .imageListContainer {
+    margin-top: 50px;
+  }
+  .imageListText {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .imageListWrapper {
+    max-width: 361px;
+  }
+}
+
+@media (max-width: 575px) {
+  .imageListContainer {
+    margin-top: 42px;
+  }
+  .imageListText {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .imageListWrapper {
+    max-width: 361px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .customImageListContainer {
+    padding: 0px 24px;
+  }
+}

@@ -1,12 +1,12 @@
 import React from "react";
 
-function ErrorPage() {
+function Error() {
   return (
-    <section>
-      <p>404 Error</p>
+    <section style={{ backgroundColor: "white", color: "black" }}>
+      <h1>404 Error</h1>
       <p>Page not found</p>
     </section>
   );
 }
 
-export default ErrorPage;
+export default Error;

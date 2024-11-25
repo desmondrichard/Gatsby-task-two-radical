@@ -4,6 +4,7 @@
   background-image: url("../../assets/images/BackgroundBanner.png");
   background-size: cover;
   background-position: center;
+  border: 1px solid blue;
 }
 
 .bannerWrapper {
@@ -12,17 +13,22 @@
 
 .bannerContentLeft {
   width: 55%;
+  border: 1px solid green;
 }
 
 .bannerContentRight {
   width: 45%;
   position: relative;
+  border: 1px solid green;
 }
 
 .bannerContentLeft > h1 {
   color: white;
-  font-size: 62px;
-  font-weight: 700;
+}
+
+.bannerContentLeftBottom {
+  display: flex;
+  flex-direction: column;
 }
 
 .bannerContentLeft h1 span {
@@ -34,15 +40,12 @@
 
 .bannerContentLeft > p {
   color: white;
-  font-size: 18px;
 }
 
 .listItem {
   color: white;
-  font-size: 18px;
   margin: 0;
   padding-left: 30px;
-  /* padding-bottom: 10px; */
   list-style: none;
   background-image: url("../../assets/images/listStyleType.png");
   background-repeat: no-repeat;
@@ -58,19 +61,6 @@
 .listImageIcon {
   width: 22px;
   height: 22px;
-}
-
-/* .bannerParagraph {
-  font-family: "Urbanist", sans-serif;
-  font-weight: 500;
-} */
-
-.consultationButton {
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "Urbanist", serif;
-  padding: 10px 24px;
-  margin: 0px !important;
 }
 
 .consultationButton:active,
@@ -98,28 +88,79 @@
 @media (min-width: 1400px) {
   .bannerImage {
     max-width: 585.38px;
-    min-height: 513px;
-    height: 100%;
+    max-height: 513px !important;
+    /* height: 100%; */
+  }
+  .bannerContainer {
+    margin-top: 92px;
+  }
+  .bannerContentLeft {
+    padding-top: 114px;
+    padding-bottom: 115px;
+  }
+  .bannerContentRight {
+    padding-top: 91px;
+    padding-bottom: 91px;
+  }
+  .bannerContentLeft > h1 {
+    font-size: 62px;
+    font-weight: 700;
+  }
+  .bannerContentLeft > p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .listItem {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .consultationButton {
+    margin-top: 36px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Urbanist", serif;
+    padding: 9px 29px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .bannerContentLeft > h1 {
     font-size: 45px;
+    font-weight: 600;
   }
   .bannerContentLeft > p {
-    font-size: 15px;
-  }
-  .listItem {
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 500;
   }
   .bannerImage {
     width: 450px;
     min-height: 360px;
     height: 100%;
   }
+  .bannerContainer {
+    margin-top: 92px;
+  }
   .bannerContentLeft {
-    margin-bottom: 48px;
+    padding-top: 90px;
+    padding-bottom: 91px;
+  }
+  .bannerContentRight {
+    padding-top: 71px;
+    padding-bottom: 71px;
+  }
+  .listItem {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .bannerContentLeftBottom {
+    gap: 36px;
+  }
+  .consultationButton {
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Urbanist", serif;
+    padding: 10px 24px;
   }
 }
 
@@ -128,11 +169,53 @@
     min-height: 513px;
     height: 100%;
   }
+  .bannerContainer {
+    margin-top: 92px;
+  }
+  .bannerContentLeft {
+    padding-top: 100px;
+    padding-bottom: 101px;
+  }
+  .bannerContentRight {
+    padding-top: 81px;
+    padding-bottom: 81px;
+  }
+  .bannerContentLeft > h1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .bannerContentLeft > p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .listItem {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .bannerContentLeftBottom {
+    gap: 36px;
+  }
+  .consultationButton {
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Urbanist", serif;
+    padding: 10px 24px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .bannerContentLeft > h1 {
     font-size: 30px;
+  }
+  .bannerContainer {
+    margin-top: 40px;
+  }
+  .consultationButton {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Urbanist", serif;
+    padding: 10px 24px;
   }
 }
 
@@ -158,36 +241,80 @@
     min-height: 300px;
     height: 100%;
   }
+  .bannerContentLeft > p {
+    font-size: 16px;
+    font-weight: 500;
+  }
   .listItem {
     background-size: 25px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .bannerContentRight {
+    padding-top: 50px;
+    padding-bottom: 51px;
   }
   .bannerContentLeft {
-    margin-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 41px;
   }
-  .bannerContentLeft {
-    margin-bottom: 48px;
+  .bannerContentLeftBottom {
+    gap: 35px;
+  }
+  .consultationButton {
+    margin-top: 35px;
   }
 }
 
+/* //image width need to expand without stretching on medium devices with same given width */
 @media only screen and (max-width: 575px) {
   .bannerImage {
-    width: 272px;
+    max-width: 272px;
     max-height: 237.53px;
+    /* object-fit: cover; */
   }
   .bannerContentLeft > h1 {
     font-size: 24px;
+    font-weight: 700;
   }
   .bannerContentLeft > p {
     font-size: 12px;
+    font-weight: 500;
   }
   .listItem {
     font-size: 12px;
     background-size: 16px;
+    font-weight: 400;
+  }
+  .bannerContainer {
+    margin-top: 40px;
   }
   .bannerContentRight {
-    margin-bottom: 24px;
+    margin-top: 42px;
   }
   .bannerContentLeft {
+    margin-top: 24.48px;
     margin-bottom: 48px;
+  }
+  .bannerContentLeftBottom {
+    gap: 34px;
+  }
+  .consultationButton {
+    margin-top: 34px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 13.3px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bannerContainer {
+    margin-top: 52px;
+  }
+}
+
+@media (min-width: 992px) {
+  .customBannerContainer {
+    padding: 0px 24px;
   }
 }

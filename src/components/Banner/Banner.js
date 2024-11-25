@@ -26,13 +26,13 @@ function Banner() {
 
           <ul>
             {items.map((item, index) => (
-              <li key={index} className="listItem my-2">
+              <li key={index} className="listItem mt-2">
                 {item}
               </li>
             ))}
           </ul>
 
-          <Button variant="primary" className="mt-3 mb-2 consultationButton">
+          <Button variant="primary" className="consultationButton">
             Book a free consultation
           </Button>
         </div>
