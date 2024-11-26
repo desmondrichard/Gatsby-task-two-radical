@@ -2,7 +2,6 @@
 
 .headerContainer {
   background-color: #18171fe5;
-  font-family: "Urbanist", sans-serif;
   font-weight: 600;
   position: fixed;
   width: 100%;
@@ -12,7 +11,6 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-sizing: content-box;
 }
@@ -35,7 +33,6 @@
   padding: 10px 24px;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Urbanist", serif;
 }
 
 .bookCallButton:hover,
@@ -50,7 +47,6 @@
   padding: 10px 24px;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Urbanist", serif;
 }
 
 .contactUsButton:hover {
@@ -59,6 +55,10 @@
 
 .headerLink {
   color: blue !important;
+}
+
+.headerLink > .headerLinkSpan {
+  color: white;
 }
 
 .headerContentRight {
@@ -89,18 +89,19 @@
 }
 
 /* Style for Offcanvas background */
-.offcanvas {
+.custom-offcanvas {
   background-color: #343a40;
-  font-family: "Urbanist", sans-serif;
 }
 
 /* Style for Nav links in Offcanvas */
-.offcanvas .nav-link {
+.custom-offcanvas .navLinks {
   color: #ffffff;
+  border-radius: 6px;
+  margin: 5px 0px;
 }
 
 /* Style for Nav links on hover */
-.offcanvas .nav-link:hover {
+.custom-offcanvas .navLinks:hover {
   background-color: #ffffff;
   color: #000000;
 }
@@ -116,7 +117,31 @@
 }
 
 .customHeaderContainer {
-  padding: 0px 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* removing default bootstrap styles: */
+.headerContentLeft {
+  padding: 0px;
+  margin: 0px;
+  /* color: none ; */
+  /* font-size: 0px; */
+}
+
+/* custom offcanvas button class styling: */
+
+.offcanvasHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvasBtn .darkBtn {
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer;
+  margin-top: 7px;
 }
 
 @media (min-width: 1400px) {
@@ -148,13 +173,23 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .headerContainer {
-    padding: 5px 0px;
+    padding: 11px 0px;
+  }
+  .headerLogo,
+  .offcanvasLogo {
+    width: 96.76px;
+    height: 15.41px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .headerContainer {
-    padding: 0px;
+    padding: 11px 0px;
+  }
+  .headerLogo,
+  .offcanvasLogo {
+    width: 96.76px;
+    height: 15.41px;
   }
 }
 
@@ -167,9 +202,13 @@
     max-height: 100px;
   }
 
-  .headerLogo {
+  .headerLogo,
+  .offcanvasLogo {
     width: 96.76px;
     height: 15.41px;
+  }
+  .headerContainer {
+    padding: 11px 0px;
   }
 }
 

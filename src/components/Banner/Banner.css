@@ -1,29 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap");
-
 .bannerContainer {
   background-image: url("../../assets/images/BackgroundBanner.png");
   background-size: cover;
   background-position: center;
-  /*** border: 1px solid blue; */
+  /* border: 1px solid blue; */
 }
 
-.bannerWrapper {
+.bannerChildWrapper {
   display: flex;
+  /* border: 1px solid red; */
 }
 
-.bannerContentLeft {
-  width: 55%;
-  /**** border: 1px solid green; */
-}
+/* .bannerContentLeft {
+  border: 1px solid green;
+} */
 
 .bannerContentRight {
-  width: 45%;
   position: relative;
-  /**** border: 1px solid green; */
+  /* border: 1px solid green; */
 }
 
-.bannerContentLeft > h1 {
+.bannerContentLeft > .bannerHeading {
   color: white;
+  /* border: 1px solid blue; */
 }
 
 .bannerContentLeftBottom {
@@ -31,21 +29,21 @@
   flex-direction: column;
 }
 
-.bannerContentLeft h1 span {
+.bannerContentLeft .bannerHeading .bannerSpanText {
   background: linear-gradient(92.56deg, #3b66ff 0.29%, #3affe7 33.8%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.bannerContentLeft > p {
+.bannerContentLeft > .bannerParagraph {
   color: white;
 }
 
 .listItem {
   color: white;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 26px;
   list-style: none;
   background-image: url("../../assets/images/listStyleType.png");
   background-repeat: no-repeat;
@@ -75,7 +73,7 @@
   top: -40px;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 0;
   background-color: rgba(155, 11, 85, 0.13);
   border-radius: 50%;
   filter: blur(40px);
@@ -88,69 +86,68 @@
 @media (min-width: 1400px) {
   .bannerImage {
     max-width: 585.38px;
-    max-height: 513px !important;
-    /* height: 100%; */
+    max-height: 513px;
   }
   .bannerContainer {
     margin-top: 92px;
   }
-  .bannerContentLeft {
-    padding-top: 114px;
-    padding-bottom: 115px;
+  .bannerChildWrapper {
+    margin-top: 183px;
+    margin-bottom: 91px;
   }
-  .bannerContentRight {
-    padding-top: 91px;
-    padding-bottom: 91px;
-  }
-  .bannerContentLeft > h1 {
+  .bannerContentLeft > .bannerHeading {
     font-size: 62px;
     font-weight: 700;
+    margin-bottom: 18px;
   }
-  .bannerContentLeft > p {
+  .bannerContentLeft > .bannerParagraph {
     font-size: 18px;
     font-weight: 500;
   }
   .listItem {
     font-size: 18px;
     font-weight: 400;
+    margin-top: 12px;
   }
   .consultationButton {
     margin-top: 36px;
     font-size: 16px;
     font-weight: 600;
-    /* font-family: "Urbanist", serif; */
     padding: 9px 29px;
+  }
+  .bannerParagraph {
+    margin-bottom: 18px !important;
+  }
+  .bannerContentRight::before {
+    max-height: 700px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .bannerContentLeft > h1 {
+  .bannerContentLeft > .bannerHeading {
     font-size: 45px;
     font-weight: 600;
+    margin-bottom: 18px;
   }
-  .bannerContentLeft > p {
+  .bannerContentLeft > .bannerParagraph {
     font-size: 17px;
     font-weight: 500;
   }
   .bannerImage {
-    width: 450px;
-    min-height: 360px;
-    height: 100%;
+    max-width: 450px;
+    max-height: 400px;
   }
   .bannerContainer {
     margin-top: 92px;
   }
-  .bannerContentLeft {
-    padding-top: 90px;
-    padding-bottom: 91px;
-  }
-  .bannerContentRight {
-    padding-top: 71px;
-    padding-bottom: 71px;
+  .bannerChildWrapper {
+    margin-top: 163px;
+    margin-bottom: 71px;
   }
   .listItem {
     font-size: 17px;
     font-weight: 400;
+    margin-top: 12px;
   }
   .bannerContentLeftBottom {
     gap: 36px;
@@ -159,38 +156,39 @@
     margin-top: 35px;
     font-size: 16px;
     font-weight: 600;
-    /* font-family: "Urbanist", serif; */
     padding: 10px 24px;
+  }
+  .bannerParagraph {
+    margin-bottom: 18px !important;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .bannerImage {
-    min-height: 513px;
-    height: 100%;
+    max-width: 585.38px;
+    max-height: 513px;
   }
   .bannerContainer {
     margin-top: 92px;
   }
-  .bannerContentLeft {
-    padding-top: 100px;
-    padding-bottom: 101px;
+
+  .bannerChildWrapper {
+    margin-top: 173px;
+    margin-bottom: 81px;
   }
-  .bannerContentRight {
-    padding-top: 81px;
-    padding-bottom: 81px;
-  }
-  .bannerContentLeft > h1 {
+  .bannerContentLeft > .bannerHeading {
     font-size: 50px;
     font-weight: 600;
+    margin-bottom: 18px;
   }
-  .bannerContentLeft > p {
+  .bannerContentLeft > .bannerParagraph {
     font-size: 18px;
     font-weight: 500;
   }
   .listItem {
     font-size: 18px;
     font-weight: 400;
+    margin-top: 12px;
   }
   .bannerContentLeftBottom {
     gap: 36px;
@@ -199,14 +197,17 @@
     margin-top: 35px;
     font-size: 16px;
     font-weight: 600;
-    /* font-family: "Urbanist", serif; */
     padding: 10px 24px;
+  }
+  .bannerParagraph {
+    margin-bottom: 18px !important;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .bannerContentLeft > h1 {
+  .bannerContentLeft > .bannerHeading {
     font-size: 30px;
+    margin-bottom: 12px;
   }
   .bannerContainer {
     margin-top: 40px;
@@ -214,13 +215,15 @@
   .consultationButton {
     font-size: 16px;
     font-weight: 600;
-    /* font-family: "Urbanist", serif; */
     padding: 10px 24px;
+  }
+  .listItem {
+    margin-top: 12px;
   }
 }
 
 @media (max-width: 991px) {
-  .bannerWrapper {
+  .bannerChildWrapper {
     flex-direction: column-reverse;
   }
 
@@ -241,7 +244,7 @@
     min-height: 300px;
     height: 100%;
   }
-  .bannerContentLeft > p {
+  .bannerContentLeft > .bannerParagraph {
     font-size: 16px;
     font-weight: 500;
   }
@@ -250,34 +253,35 @@
     font-size: 16px;
     font-weight: 400;
   }
-  .bannerContentRight {
-    padding-top: 50px;
-    padding-bottom: 51px;
-  }
   .bannerContentLeft {
-    padding-top: 40px;
-    padding-bottom: 41px;
+    margin-bottom: 41px;
+  }
+  .bannerChildWrapper {
+    margin-top: 96px;
   }
   .bannerContentLeftBottom {
     gap: 35px;
   }
   .consultationButton {
-    margin-top: 35px;
+    margin-top: 34px;
+  }
+  .bannerContentRight {
+    margin-bottom: 24.48px;
   }
 }
 
-/* //image width need to expand without stretching on medium devices with same given width */
 @media only screen and (max-width: 575px) {
   .bannerImage {
     max-width: 272px;
     max-height: 237.53px;
     /* object-fit: cover; */
   }
-  .bannerContentLeft > h1 {
+  .bannerContentLeft > .bannerHeading {
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 12px;
   }
-  .bannerContentLeft > p {
+  .bannerContentLeft > .bannerParagraph {
     font-size: 12px;
     font-weight: 500;
   }
@@ -285,15 +289,18 @@
     font-size: 12px;
     background-size: 16px;
     font-weight: 400;
+    margin-top: 16px;
+    padding-left: 20px;
   }
   .bannerContainer {
     margin-top: 40px;
   }
   .bannerContentRight {
-    margin-top: 42px;
+    margin-bottom: 24.48px;
+    display: flex;
+    justify-content: center;
   }
   .bannerContentLeft {
-    margin-top: 24.48px;
     margin-bottom: 48px;
   }
   .bannerContentLeftBottom {
@@ -305,11 +312,21 @@
     font-weight: 600;
     padding: 12px 19.5px;
   }
+  .bannerChildWrapper {
+    margin-top: 96px;
+    margin-bottom: 24.48px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .bannerContainer {
     margin-top: 52px;
+  }
+  .bannerContentLeft > .bannerHeading {
+    margin-bottom: 12px;
+  }
+  .listItem {
+    margin-top: 12px;
   }
 }
 

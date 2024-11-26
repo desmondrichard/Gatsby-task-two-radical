@@ -14,35 +14,38 @@ function Banner() {
   return (
     <section className="bannerContainer">
       <div className="bannerWrapper container customBannerContainer">
-        <div className="bannerContentLeft">
-          <h1>
-            <span>Flutter</span> Mobile App Development Company
-          </h1>
-          <p className="bannerParagraph">
-            We are a renowned web and mobile app development company, dedicated
-            to delivering exceptional app development services by using the
-            power of Google's revolutionary framework, Flutter.
-          </p>
+        <div className="bannerChildWrapper">
+          <div className="bannerContentLeft">
+            <h1 className="bannerHeading">
+              <span className="bannerSpanText">Flutter</span> Mobile App
+              Development Company
+            </h1>
+            <p className="bannerParagraph">
+              We are a renowned web and mobile app development company,
+              dedicated to delivering exceptional app development services by
+              using the power of Google's revolutionary framework, Flutter.
+            </p>
 
-          <ul>
-            {items.map((item, index) => (
-              <li key={index} className="listItem mt-2">
-                {item}
-              </li>
-            ))}
-          </ul>
+            <ul>
+              {items.map((item, index) => (
+                <li key={index} className="listItem">
+                  {item}
+                </li>
+              ))}
+            </ul>
 
-          <Button variant="primary" className="consultationButton">
-            Book a free consultation
-          </Button>
-        </div>
-        <div className="bannerContentRight px-1">
-          <Image
-            src={bannerImage}
-            alt="banner_image"
-            fluid
-            className="bannerImage"
-          />
+            <Button variant="primary" className="consultationButton">
+              Book a free consultation
+            </Button>
+          </div>
+          <div className="bannerContentRight">
+            <Image
+              src={bannerImage}
+              alt="banner_image"
+              fluid
+              className="bannerImage"
+            />
+          </div>
         </div>
       </div>
     </section>

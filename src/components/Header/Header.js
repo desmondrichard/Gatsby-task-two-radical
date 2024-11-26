@@ -26,10 +26,10 @@ function Header() {
 
             <Nav className="ms-auto headerContentRight">
               <Nav.Link href="#solutions" className="headerLink">
-                <span style={{ color: "white" }}>Solutions</span>
+                <span className="headerLinkSpan">Solutions</span>
               </Nav.Link>
               <Nav.Link href="#blog" className="headerLink">
-                <span style={{ color: "white" }}>Blog</span>
+                <span className="headerLinkSpan">Blog</span>
               </Nav.Link>
               <div className="buttonGroup">
                 <Button variant="outline-primary" className="bookCallButton">
@@ -60,17 +60,30 @@ function Header() {
         placement="start"
         className="offcanvas custom-offcanvas"
       >
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header className="offcanvasHeaderContainer">
           <Offcanvas.Title>
             <Image src={headerLogo} alt="Logo" className="offcanvasLogo" />
           </Offcanvas.Title>
+          <div className="offcanvasBtn">
+            <Button variant="dark" className="darkBtn" onClick={handleClose}>
+              X
+            </Button>
+          </div>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link href="#action/3.1">Solutions</Nav.Link>
-            <Nav.Link href="#action/3.2">Blog</Nav.Link>
-            <Nav.Link href="#action/3.3">Book a call</Nav.Link>
-            <Nav.Link href="#action/3.3">Contact Us</Nav.Link>
+            <Nav.Link href="#action/3.1" className="navLinks">
+              Solutions
+            </Nav.Link>
+            <Nav.Link href="#action/3.2" className="navLinks">
+              Blog
+            </Nav.Link>
+            <Nav.Link href="#action/3.3" className="navLinks">
+              Book a call
+            </Nav.Link>
+            <Nav.Link href="#action/3.3" className="navLinks">
+              Contact Us
+            </Nav.Link>
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>
