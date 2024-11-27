@@ -1,13 +1,17 @@
 import * as React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "../components/Layout";
-import "../components/index.css";
-
+import Banner from "../components/Banner/Banner";
+import BannerImages from "../components/BannerImages/BannerImages";
+import ImageList from "../components/ImageList/ImageList";
+import HorizontalCards from "../components/HorizontalCards/HorizontalCards";
 
 export default function Home() {
   return (
     <Layout>
-      {/* <h3>Hello</h3> */}
+      <Banner />
+      <BannerImages />
+      <ImageList />
+      <HorizontalCards />
     </Layout>
-  )
+  );
 }

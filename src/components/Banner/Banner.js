@@ -1,8 +1,8 @@
 import React from "react";
-import "./Banner.css";
 import Image from "react-bootstrap/Image";
-import bannerImage from "../../assets/images/BannerImage.png";
 import Button from "react-bootstrap/Button";
+import bannerImage from "../../assets/images/BannerImage.png";
+import "./Banner.css";
 
 function Banner() {
   const items = [

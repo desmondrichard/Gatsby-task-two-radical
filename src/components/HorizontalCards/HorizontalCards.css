@@ -1,0 +1,91 @@
+.customHorizontalCardsContainer {
+  padding-left: 24px;
+  padding-right: 24px;
+  color: white;
+  /* border:1px solid greenyellow; */
+}
+
+.horizontalCardsTextParentWrapper {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.horizontalCardsTextChildWrapper {
+  /* border: 1px dashed blue; */
+  width: 745px;
+}
+
+.horizontalCardsParagraph {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+
+.horizonalCardsParagraphSpanTop {
+  background: rgb(236, 112, 73);
+  background: linear-gradient(
+    34deg,
+    rgba(236, 112, 73, 1) 0%,
+    rgba(176, 56, 233, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1400px) {
+  .horizontalCardsTextParentWrapper {
+    margin-bottom: 78px;
+  }
+  .horizontalCardsParagraph {
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .horizontalCardsTextParentWrapper {
+    margin-bottom: 70px;
+  }
+  .horizontalCardsParagraph {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .horizontalCardsTextParentWrapper {
+    margin-bottom: 70px;
+  }
+  .horizontalCardsParagraph {
+    font-size: 35px;
+    line-height: 43px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .horizontalCardsTextParentWrapper {
+    margin-bottom: 24px;
+  }
+  .horizontalCardsParagraph {
+    font-size: 31px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .horizontalCardsTextParentWrapper {
+    margin-bottom: 24px;
+  }
+  .horizontalCardsParagraph {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .horizontalCardsTextParentWrapper {
+    margin-bottom: 24px;
+  }
+  .horizontalCardsParagraph {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

@@ -23,18 +23,11 @@ function BannerImages() {
     },
   ];
   return (
-    <section
-      className="bannerImageWrapper"
-    >
-      <div className="container customContainer">
+    <section className="bannerImageWrapper">
+      <div className="container customBannerImageContainer">
         <Row className="g-0 bannerImageWrapperRow">
           {cardData.map((card, idx) => (
-            <Col
-              key={idx}
-              xs={4}
-              className="bannerImageColumn"
-              
-            >
+            <Col key={idx} xs={4} className="bannerImageColumn g-0">
               <Card className="bannerImagecards">
                 <Card.Img
                   src={card.imgSrc}

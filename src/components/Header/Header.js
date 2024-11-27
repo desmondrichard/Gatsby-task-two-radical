@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Header.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
@@ -7,6 +6,7 @@ import Image from "react-bootstrap/Image";
 import headerLogo from "../../assets/images/Logo.png";
 import toggleIcon from "../../assets/images/collapseIcon.png";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import "./Header.css";
 
 function Header() {
   //modal:
@@ -16,16 +16,18 @@ function Header() {
   const handleShow = () => setShow(true);
 
   return (
+  
+
     <>
       <header className="headerContainer">
         <div className="container customHeaderContainer">
           <Navbar className="headerWrapper">
-            <Navbar.Brand className="headerContentLeft">
+            <Navbar.Brand className="headerContentLeft" href="/">
               <Image src={headerLogo} alt="Logo" className="headerLogo" />
             </Navbar.Brand>
 
             <Nav className="ms-auto headerContentRight">
-              <Nav.Link href="#solutions" className="headerLink">
+              <Nav.Link href="#solution" className="headerLink">
                 <span className="headerLinkSpan">Solutions</span>
               </Nav.Link>
               <Nav.Link href="#blog" className="headerLink">

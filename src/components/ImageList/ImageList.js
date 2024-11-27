@@ -1,5 +1,4 @@
 import React from "react";
-import "./ImageList.css";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -9,6 +8,7 @@ import imageList3 from "../../assets/images/Yolo.png";
 import imageList4 from "../../assets/images/cux travel.png";
 import imageList5 from "../../assets/images/stay8.png";
 import imageList6 from "../../assets/images/dock.png";
+import "./ImageList.css";
 
 function ImageList() {
   const cardData = [
@@ -54,15 +54,15 @@ function ImageList() {
           </div>
         </div>
         <div className="imageListCardsWrapper">
-          <Row className="g-1 imageListCardsRow">
+          <Row className="g-0 imageListCardsRow">
             {cardData.map((card, idx) => (
-              <Col key={idx} xs={4} xxl={2} className="imageListCardsCol">
+              <Col key={idx} xs={4} xxl={2} className="imageListCardsCol g-0">
                 <Card className="imageListCard">
                   <Card.Img
                     variant="top"
                     src={card.imgSrc}
                     alt={card.alt}
-                    className={`${card.className}` + " imageListCardImg"}
+                    className={`${card.className} imageListCardImg`}
                   />
                 </Card>
               </Col>

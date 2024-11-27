@@ -1,18 +1,16 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header/Header";
-import Banner from "./Banner/Banner";
-import "./Global.css";
-// import BannerImages from "./BannerImages/BannerImages";
-// import ImageList from "./ImageList/ImageList";
+import "../components/Global.css";
+
 
 function Layout({ children }) {
   return (
-    <main>
+    <>
       <Header />
-      <Banner />
-      {/* <BannerImages /> */}
-      {/* <ImageList /> */}
-    </main>
+      <main>{children}</main>
+      <footer>footer</footer>
+    </>
   );
 }
 
